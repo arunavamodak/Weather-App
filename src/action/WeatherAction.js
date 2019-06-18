@@ -1,6 +1,6 @@
 export const fetchWeather = (lat, long) => dispatch =>
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=e5f85889af2e7ddeeb2e38470c35a02f`
+    `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=api_key`
   )
     .then(response => response.json())
     .then(json => {
